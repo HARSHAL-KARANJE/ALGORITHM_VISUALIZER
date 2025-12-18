@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Algorithm Visulizer</h1>
+    <div class="controls">
+       <label for="sizeSlider">Array Size : <span id="sizeValue">20</span></label>
+        <input type="range" id="sizeSlider" min="5" max="50" value="20">
+        <label>
+            <input type="range" id="speedSlider" min="1" max="100" value="50">
+            <label for="speedSlider">Array Speed :<span id="speedValue">50</span></label>
+        </label><!--"input" fires every time the slider moves
+                Not after release
+                Not on button click
+                Real-time updates
+                 So this means:
+                “Run this function while the user is sliding”-->
+
+        <button id="newArray">New Array</button> <!--button are id becz each button have uniqe function-->
+        <button id="goBtn">Bubble Sort</button>
+        <button id="selectionBtn">Selection Sort</button>
+        <button id = "quickSort">Quick Sort</button>
+
+    </div>
+    <div id="array-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
